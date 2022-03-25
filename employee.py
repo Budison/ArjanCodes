@@ -1,6 +1,7 @@
 from dataclasses import dataclass
 from operator import truediv
 
+
 @dataclass
 class Employee:
     name: str
@@ -13,7 +14,6 @@ class Employee:
     has_commission: bool = True
     commission: float = 100.0
     contracts_landed: int = 0
-
 
     def compute_payout(self) -> float:
         employer_cost = self.employer_office_costs + self.employer_401k_costs + self.employer_support_costs
